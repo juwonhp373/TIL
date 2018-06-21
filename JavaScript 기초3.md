@@ -70,6 +70,7 @@ $('util[command]').on('click', function () {
 
 <br>
 
+- id로 가져왔을 때,
 ```
 $('#ac').on('click', function () {  
     value = 0;  
@@ -91,6 +92,31 @@ $('#percentage').on('click', function () {
 > `#ac`는 value값을 0으로 초기화,
 > `#plusminus`는 value값에 전체 계산을 eval로 한뒤, -붙여서 부호 바꾸기,
 > `#percentage`는 value값에 전체계산을 eval로 한뒤, 0.01곱하기.
+
+<br>
+
+- attribute로 가져왔을 때,
+```
+$('.other[command]').on('click', function () {  
+    console.log(this)  
+    var command = $(this).attr('command');  
+  switch (command) {  
+        case 'ac' :  
+            value = 0;  
+			break  
+		case 'plusminus' :  
+            value = -eval(value);  
+			break  
+		case 'percentage' :  
+            value = eval(value) * 0.01;
+            break
+  }  
+    $result.text(value);  
+})
+```
+> other 버튼들을 switch문으로 묶어보았다.
+
+> switch문을 쓸 때,  `switch ($(this).attr('command'))` 라고 쓰기 보다 위 처럼 `var command` 객체를 만들어서 알아보기 쉽게 한다.
 
 <br>
 
