@@ -58,27 +58,6 @@
 	- 정규표현식
 
 ### 기본 타입 
-*숫자*
-`var intNum = 10;`
-
--  자바스크립트에서는 모든 숫자를 64비트 부동 소수점 형태(C언어 double 타입과 유사)로 저장한다.
-- 나눗셈 할 때 *주의!* `var num = 5 / 2;` 의
-`console.log(num);` => `2.5`
-`console.log(Math.floor(num));` => `2`
-
-*문자열*
-`var singleQuoteStr = 'single quote string;`
-`var doubleQuoteStr = "double quote string";`
-
-*불린값*
-`var boolVar = true;`
-
-*null*
-`var nullVar = null;`
-`console.log(typeof nullVar)` => `object`
-
-*undefined*
-`var emptyVar;`
 
 이들 타입의 특징은 그 자체가 하나의 값을 나타낸다는 것이다.
 
@@ -88,3 +67,48 @@
 	- 이렇게 선언된 변수에는 어떤 타입의 데이터라도 저장하는 것이 가능하다. 
 	- 따라서 자바스크립트는 변수에 어떤 형태의 데이터를 저장하느냐에 따라 해당 변수의 타입이 결정된다. 
 
+
+*숫자*
+`var intNum = 10;`
+
+-  자바스크립트에서는 모든 숫자를 64비트 부동 소수점 형태(C언어 double 타입과 유사)로 저장한다.
+- *나눗셈 할 때 주의!* 
+```js
+var num = 5 / 2;
+console.log(num); // 2.5
+console.log(Math.floor(num)); // 2
+```
+*문자열*
+`var singleQuoteStr = 'single quote string;`
+`var doubleQuoteStr = "double quote string";`
+
+- 문자열은 작은 따옴표(')나 큰 따옴표(")로 생성한다.
+- 문자열은 배열처럼 index이용해서 접근 할 수 있다. 
+- 한번 정의된 문자열은 읽기만 가능하고 수정은 불가능하다.
+```js
+var str = 'test';
+console.log(str[0], str[1], str[2], str[3]); // test
+str[0] = 'T';
+console.log(str); // test
+```
+
+*불린값*
+`var boolVar = true;`
+
+*null*
+`var nullVar = null;`
+`console.log(typeof nullVar)` => `object`
+
+- null 타입의 변수는 개발자가 명시적으로 값이 비어있음을 나타내는데 사용한다.
+- nullVar 의 typeof 결과가 null이 아니라 object임을 주의 해야한다.
+	-	자바스크립트에서 null 타입 변수인지를 확인할때 typeof 연산자 사용X, 일치연산자(===)를 사용해서 변수의 값을 직접 확인해야 한다.
+```js
+console.log(typeof nullVar === null); // false
+console.log(nullVar === null); // true
+```
+
+*undefined*
+`var emptyVar;`
+
+- emptyVar는 undefined 타입이며, 변수 자체의 값 또한 undefined이다.
+- 자바스크립트에서 undefined는 타입이자, 값을 나타낸다.
