@@ -17,11 +17,11 @@
 ```html
 <template>
 <div class="hello">
-	<ol>  
-	 <li v-for="todo in todos">  
-	  {{ todo.text }}  
-	  </li>  
-	</ol>
+  <ol>  
+   <li v-for="todo in todos">  
+    {{ todo.text }}  
+    </li>  
+  </ol>
 ```
 ```js
 <script>  
@@ -55,5 +55,4 @@ export default {
 
 > 하지만 이렇게 했는데 아래와 같이 한줄에 뜬다.
 > JavaScript 배우기 Vue 배우기 HTML 배우기
-
-# 사용자 입력 핸들링
+> 왜_???
