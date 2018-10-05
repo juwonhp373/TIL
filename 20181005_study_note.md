@@ -24,7 +24,7 @@ export default {
 <script type="text/javascript"> 
 import globalState from './globalState.js' 
 export default { 
-	name : "ui-component', 
+	name : "ui-component", 
 	data : function() { 
 		return globalState 
 	}, 
