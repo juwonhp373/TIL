@@ -13,5 +13,7 @@ export default new Router({
 	component: TestDownloadList  // import 가져옴
     },
   ]
-});
+}); 
 ```
+
+
