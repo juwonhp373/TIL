@@ -1,0 +1,125 @@
+--------------- vue 초기화 ---------------
+
+화면 비우기
+-> clear
+현재 위치
+-> pwd(print working directory)
+
+
+cd Develop
+ls
+1. mkdir '파일 이름'
+
+2. cd '파일 이름' 에 들어간다.
+
+3. 한번만 하면 된다(mac 에는 되어있는 상태).
+   -> npm install -g vue-cli
+     (vue-cli가 vue 프로젝트의 템플릿을 만들어준다.)
+
+4. vue init hyunwoo/vue-template
+
+5.
+                   .
+                   .
+                   .
+
+? Generate project in current directory? Yes
+? Project name vue-router-test
+? Project description A Vue.js project
+? Author SharingWorld <hapsoa@gmail.com>
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset Airbnb
+? Pick an template language pug
+? Pick an style language sass
+? Set up unit tests Yes
+? Pick a test runner karma
+? Setup e2e tests with Nightwatch? Yes
+? Pick a documentation tool documentationjs
+? Do you want to deploy on the github page? Yes
+? Branch name gh-pages
+? What is the GitHub Project Name? 
+* Important: If this project is a user-wide github page, leave it blank. If not, please enter the n
+ame of the project.
+1) {USERNAME}.github.io => BLANK,
+2) {USERNAME}.github.io/{PROJECTNAME} => PROJECTNAME 
+ :  vue-router-test
+? Should we run `npm install` for you after the project has been created? (recommended) npm
+
+                   .
+                   .
+                   .
+
+6. ls -> 지금 다운받아진 모든 파일들이 보인다.
+
+7. git init -> git을 시작하겠다는 명령어.
+
+8. git add . -> 모든 파일들이 올라갈 대기 탐.
+
+9. git status -> 현재 파일들의 상태를 보여줌(현재로서는 올라갈 대기탄 파일들이 초록색으로 보임.)
+
+10. git commit -m "first commit(이런식으로 현제 push에 대한 메세지 남기기)"
+
+11. github 에서 가져와서 복붙.
+	-> git remote add origin https://github.com
+	   juwonhp373/vue-router-test.git
+	   git push -u origin master
+
+12. webstorm . -> 주소에 대한 webstorm 을 띄워줌.
+
+
+
+--------------- npm ---------------
+
+dev : 리프레시 까지 해줌, 개발할때만 쓰임, 배포용 아님, 무거움
+
+start : 같다(배포용)
+
+----
+unit : 유닛 테스트(src -> page -> Hello.vue)
+e2e : end to end
+---> 위 두개는 테스트용이다.
+
+test -> unit과 e2e를 동시에 실행해줌.
+
+lint : 실행할 필요가 없습니다. 문법잡아주는거, 근데 webstorm에서 지원해 주기 때문에 안해도 됨.
+
+generate-docs :
+dist안에 도큐먼트를 생성해줌
+주석을 모아서 도큐먼트를 만드는 거임
+function to generate a documentation file from source files.
+
+serve-docs : 도큐먼트 서버를 구동시켜줌
+
+build :
+실행하면 src파일이 dist파일로 변환되서 간다.
+작업하는 모든 파일들을 static폴더와 index.html 로 묶어준다.
+같은 용량이라 쳤을 때, 여러파일을 각각 받는 것 보다 용량을 줄여서 하나로 만든 파일이 성능이 더 좋다.
+babel을 실행시켜주는 것이 build이다.
+babel이 만들어 주는게 dist 폴더이다. 낮은 버전(인터넷 익스플로러)을 사용하는 사람들도 웹브라우저를 사용 할 수 있도록 하는 것.
+
+build -> dist 폴더가 config(config 아래에 static 이랑 index.html 생성) 밑에 생김 -> generate-docs -> dist 안에 documentation 이 생김
+
+
+index.html 을 바탕으로 모든게 구성이 된다(id="app" 밑으로 다 들어온다).
+
+
+
+--------------- Hello.vue ---------------
+
+<template lang="pug">
+template 바로 아래 div는 같은 뎁스에 하나만 존재해야한다(두개 이상있으면 에러남).
+루트는 하나여야 함.
+
+<style scoped lang="sass">
+여기서 'scoped' 는 외부로 연결되지 않게 한다. Hello.vue 안에서만 적용.
+
+*하나의 뷰는 뷰파일이라고 불릴 것이다 우리끼리.
+
+
+
+
+
+
+
