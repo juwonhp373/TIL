@@ -47,6 +47,10 @@ Facility Management System
 - 이 바인딩 유형은 현재 상태의 스냅숏이 사용하기에 적절하거나 데이터가 정적인 상황에서 데이터를 사용하는 경우에 적합하다.
 
 
-## v-model 을 이용한 two-way binding
+## 단방향 데이터 바인딩
 vue 인스턴스의 `data` 객체가 가지고 있는 정보를 HTML 코드 내로 바인딩하여 그 값을 확인했다. `methods` 내의 함수로 데이터를 변경하면 변경하는 즉시 값이 변한다. 
+즉, Vue 인스턴스 -> Template 와 같이 한방향으로 데이터에 접근 할 수 있었다.
+=> 단방향 데이터 바인딩
 
+
+## v-model 을 이용한 two-way binding
