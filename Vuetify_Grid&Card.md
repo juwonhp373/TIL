@@ -1,4 +1,4 @@
-# Vuetify: Grid & Card
+# Vuetify
 ## Theme
 ### Customizify has a standard theme applied for all components.
 > primary, secondary, accent, error, info, success, warning
@@ -25,6 +25,7 @@ this.$vuetify.theme.primary = '#4caf50'
 
 ## Breakpoints
 5 types of media breakpoints
+Material Design Viewport Breakpoints
 
 * Extra small:  `xs`
 -> small to large handset ( <600px )
@@ -61,7 +62,51 @@ export default {
 }
 ```
 
+## Display
+### Display
+Specify the elements 	`display` property. -> `d-{display}`.
+	* `d-inline-flex` : sets the element display property to `inline-flex`
+	* `d-flex`
+	* `d-inline-block`
+	* `d-block`
+	* `d-inline`
+	* `d-none`
 
+
+### Visibility
+Display an element based upon the current *viewport*
+These classes can be applied using the format of -> `hidden-{breakpoint}-{condition}`
+
+*condition* applies the class base on:
+	* `only` : hide the element only on `xs` through `xl` breakpoints.
+	* `and-down` : hide the element on the specified breakpoint and down `sm` through `lg` breakpoints
+	* `and-up` : hide the element on the specified breakpoint and up `sm` through `lg` breakpoints
+	* Additionally, /media types/ can be targeted using the `only` condition. Both `hidden-screen-only` and `hidden-print-only` are supported.
+
+### Overflow
+`overflow-{axis}-hidden` or simply `overflow-hidden`.
+	* `overflow-hidden` : hide overflow on both the x and y axis.
+	* `overflow-y-hidden` : hide overflow on the y axis.
+	* `overflow-x-hidden` : hide overflow on the x axis.
+## Text alignment
+Alignment classes helps position text based on viewport size.
+
+```ts
+<template>
+	<v-card>
+		<v-card-text>
+			<p class="text-lg-right">Right align on large viewport sizes</p>
+			<p class="text-md-center">Center align on medium viewport sizes</p>
+			<p class="text-sm-left">Left align on small viewport sizes</p>
+			<p class="text-xs-center">Center align on all viewport sizes</p>
+			<p class="text-xs-right">Right align on all viewport sizes</p>
+		</v-card-text>
+	</v-card>
+</template>
+```
+
+## Spacing
+Update layout without creating new classes.
 
 ## 개발 용어
 * boilerplate 보일러 플레이트
@@ -82,3 +127,5 @@ export default {
 ## References
 > [Vuetify_Theme](https://vuetifyjs.com/en/framework/theme)
 > [Vuetify_Breakpoints](https://vuetifyjs.com/ko/framework/breakpoints)
+> [Vuetify_Text Alignment](https://vuetifyjs.com/en/framework/alignment)
+> [Vuetify_Display](https://vuetifyjs.com/en/framework/display)
