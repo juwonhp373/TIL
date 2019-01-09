@@ -1,0 +1,26 @@
+### Difference between `data:` and `data()` in Vue.js
+
+Data option in two ways.
+```js
+new Vue ({
+	el: "#app",
+	data: {
+		message: 'hello mr. magoo'
+	}
+});
+
+new Vue ({
+	el: "#app",
+	data() {
+		return {
+			message: 'hello mr. magoo'
+		}
+	}
+});
+```
+
+> when you have reusable components.
+> -> `data() {return {...};}`
+> 				or
+> -> `data: function() {return [...};}`
+> instead use `data: {...}` same data object will be shared between the child components which can cause bugs
