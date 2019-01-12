@@ -81,6 +81,19 @@ interface ParsedThemeItem {
 
 ## Grid
 
+## Card
+
+`v-card` component is a versatile component.
+
+### Usage
+
+4 basic components
+
+- `v-card-media`
+- `v-card-title`
+- `v-card-text`
+- `v-card-actions`
+
 ## Breakpoints
 
 5 types of media breakpoints
@@ -200,6 +213,8 @@ Update layout without creating new classes.
 
 - tertiary = third
 
+- versatile = 변하기 쉬운
+
 ## References
 
-> [Vuetify_Theme](https://vuetifyjs.com/en/framework/theme) > [Vuetify_Breakpoints](https://vuetifyjs.com/ko/framework/breakpoints) > [Vuetify_Text Alignment](https://vuetifyjs.com/en/framework/alignment) > [Vuetify_Display](https://vuetifyjs.com/en/framework/display)
+> [Vuetify_Theme](https://vuetifyjs.com/en/framework/theme) > [Vuetify_Card](https://vuetifyjs.com/en/components/cards) > [Vuetify_Breakpoints](https://vuetifyjs.com/ko/framework/breakpoints) > [Vuetify_Text Alignment](https://vuetifyjs.com/en/framework/alignment) > [Vuetify_Display](https://vuetifyjs.com/en/framework/display)
