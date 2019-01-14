@@ -217,4 +217,4 @@ Update layout without creating new classes.
 
 ## References
 
-> [Vuetify_Theme](https://vuetifyjs.com/en/framework/theme) > [Vuetify_Card](https://vuetifyjs.com/en/components/cards) > [Vuetify_Breakpoints](https://vuetifyjs.com/ko/framework/breakpoints) > [Vuetify_Text Alignment](https://vuetifyjs.com/en/framework/alignment) > [Vuetify_Display](https://vuetifyjs.com/en/framework/display)
+> [Vuetify_Theme](https://vuetifyjs.com/en/framework/theme) > [Vuetify_Card](https://vuetifyjs.com/en/components/cards) > [Vuetify_Breakpoints](https://vuetifyjs.com/ko/framework/breakpoints) > [Vuetify_Text Alignment](https://vuetifyjs.com/en/framework/alignment) > [Vuetify_Display](https://vuetifyjs.com/en/framework/display) > [Vuetify_NavigationDrawer](https://vuetifyjs.com/en/components/navigation-drawers)
