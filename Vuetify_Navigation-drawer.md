@@ -48,7 +48,23 @@ export default {
 };
 ```
 
-# Mini
+# Various Navigation-drawer
+
+## Colored drawer
+
+## Permanent floating drawer
+
+## Avatars
+
+## Temporary
+
+## Dark theme
+
+## Combined drawers
+
+## Nested lists
+
+## Mini
 
 `vini-variant.sync` prop 을 사용하여 제어하는 미니-변형 이 있다.
 
@@ -68,5 +84,3 @@ export default {
 # References
 
 [Vuetify_Navigation-drawers](https://vuetifyjs.com/ko/components/navigation-drawers)
-
-
