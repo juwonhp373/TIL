@@ -11,7 +11,7 @@ items 배열안에 3개의 아이템이 있고 그중 하나는 tool 이 없을 
 
 `v-navigation-drawer` -> navigation drawer 자체
 `v-toolbar` -> navigation drawer 내의 기능들의 주제
-`v-list` ->
+`v-list` -> ?
 `v-list-tile`
 `v-list-tile-title class="title"`
 -> class=“title” 은 왜 붙인것???
@@ -41,10 +41,10 @@ export default {
     return {
       items: [
         { title: 'Home', icon: 'home' },
-        { title: 'About', icon: 'settings' }
-      ]
+        { title: 'About', icon: 'settings' },
+      ],
     };
-  }
+  },
 };
 ```
 
